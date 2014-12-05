@@ -1,0 +1,117 @@
+.bg {
+	background-image: url("/static/images/Bike_Background.jpg");
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-ms-background-size: cover;
+	background-size: cover;	
+	background-color: #3B4538;
+
+	/* Set rules to fill background */
+	min-height: 100%;
+	min-width: 100%;
+	
+	/* Set up proportionate scaling */
+	width: 100%;
+	height: 100%;
+	
+	/* Set up positioning */
+	position: absolute;
+	z-index: -1;
+	background-position: center center;
+	}
+	
+	@media screen and (max-width: 1024px) { /* Specific to this particular image */
+		img.bg {
+		  left: 50%;
+		  margin-left: -512px;   /* 50% */
+		}
+	}
+} /*end of background*/
+
+@media only screen and (max-width: 480px) {
+   table[class="container"] { 
+     width:320px !important;
+   }
+ }
+  
+html, body {
+	height:100%;
+}
+
+.container {
+	width:100%;
+	max-width:1000px;
+	min-width:800px;
+	background-color: red;
+	valign: top;
+	position: fixed;
+}
+
+table {
+	vertical-align: top;
+	position: fixed;
+	align: top;
+	align: center;
+}
+
+tr {
+	vertical-align: top;
+}
+.toplinks {
+	position: ;	
+}
+.toplinks2 {
+	height: 100px;
+	position: relative;
+}
+.empty {
+	height: 100px;
+}
+.greybox {
+	background-color: grey;
+	width: 60%;
+	height: 100%;
+}
+
+td {
+	vertical-align: top;
+}
+
+/*Title and Slogan*/
+.mainTitle {
+/* 	position: fixed; stays in place when scrolling */
+	z-index: 500;
+	font-family: 'Helvetica Neue';
+	font-size: 30px;
+	font-weight: bold;
+	font-color: black;
+	text-align: left;
+/* 	margin-left: 5%; */
+/* 	margin-top: 35%; */
+	}
+.slogan {
+/* 	position: fixed; */
+	z-index: 500;
+/* 	margin-top: 35%; */
+/* 	margin-left: 5%; */
+	text-align: left;
+	font-family: 'Helvetica Neue';
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 32px;
+	font-color: black;
+	}
+
+/*Topmost Text Links*/
+/* 	.topTextLinks { */
+/* 		position: absolute; */
+/* 		top: 1em; */
+/* 		z-index: 500; */
+/* 		} */
+	
+ /*end of body*/
+
+/*CTRL SHIFT C for comments*/

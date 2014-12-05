@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<!--look up django template tags -->
+{% load bootstrap3 %}
+{% bootstrap_css %}
+{% bootstrap_javascript %}
+
+
+<html lang="en">
+
+<head>
+	<title>PlaneTickets.com Homepage</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="styles.css" type="text/css"/>
+	<meta name="viewport" content = "width-device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+
+	<script>
+
+	// $function printData() {
+	// 	datatoparse = data['results'];
+	// 	var obj = JSON.parse(datatoparse);
+	// 	for(var key in obj){
+	// 		if(obj.hasOwnProperty(key)){
+	// 			var value = obj[key];
+	// 			document.getElementById("displayInfo").innerHTML = "Print here." + obj.collection1[key].Departure + obj.collection1[key].Arrival;
+	// 		}
+	// 	}
+	// }
+
+	// $(function printData() {
+	// 	var datatoparse = [];
+
+	// 	$.getJSON('filename.json', printData(data))
+	// 	var obj = JSON.parse(datatoparse);
+	// 	for(var key in obj){
+	// 		if(obj.hasOwnProperty(key)){
+	// 			var value = obj[key];
+	// 			document.getElementById("displayInfo").innerHTML = "Print here." + obj.collection1[key].Departure + obj.collection1[key].Arrival;
+	// 		}
+	// 	}
+	// });
+
+	</script>
+
+</head>
+
+<body class="body">
+	<p id = "displayInfo">
+	
+		<button type="button" onclick="printData()"> Click here </button>
+
+	</p>
+
+	<p id = "displayFlights">
+		{% for flight in collectionofflights %}
+			<li> Flight name: {{ flight.name }}</li>
+			<li> Flight cost: ${{ flight.cost }}</li>				
+		{% endfor %}
+	</p>
+
+</body>
+</html>

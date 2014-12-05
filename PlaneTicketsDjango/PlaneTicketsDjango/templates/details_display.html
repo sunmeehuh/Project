@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>PlaneTickets.com Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	
+	<!-- 
+	<link rel="stylesheet" href="styles.css" type="static/css"/>
+	<meta name="viewport" content = "width-device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+	-->
+</head>
+
+
+<body class="body">
+	<div id="bg">
+		<img style="display:block;" src="static/images/Bike_Background.jpg">
+	</div>
+	
+<!-- Main Information -->
+	<div id="content">
+		<p id = "displayFlights">
+			<p class = "list-group-item"> Airline: {{ detailsList.Airline }}</li>
+			<li class = "list-group-item"> Availability: {{ detailsList.Availability }}</li>		
+			<li class = "list-group-item"> Travel Starting: {{detailsList.values.3 }}</li>
+			<li class = "list-group-item"> Travel Ending: {{detailsList.values.4.text }}</li>
+<!-- 				<li class = "list-group-item"> Book At: {{ detailsList.values.7.text }}</li>				 -->
+				</ul>
+		</p>
+	</div>
+
+</body>
+<script>
+</script>
+</html>

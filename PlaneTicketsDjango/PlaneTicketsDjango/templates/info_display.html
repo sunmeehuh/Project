@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<title>PlaneTickets.com Homepage</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	
+	<!-- 
+	<link rel="stylesheet" href="styles.css" type="static/css"/>
+	<meta name="viewport" content = "width-device-width, initial-scale=1.0">
+	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js"> </script>
+	-->
+</head>
+
+
+<body class="body">
+	<div id="bg">
+		<img style="display:block;" src="static/images/Bike_Background.jpg">
+	</div>
+	
+<!-- Main Information -->
+	<div id="content">
+		<p id = "displayFlights">
+			{% for product in products %}
+				<ul class = "list-group">
+				<li class = "list-group-item"> Flight cost: {{product.values.1 }}</li>		
+				<li class = "list-group-item"> Flight cost: {{product.values.1.text }}</li>
+				<li class = "list-group-item"> Departure: {{ product.Departure.text }}</li>
+				<li class = "list-group-item"> Arrival: {{ product.Arrival.text }}</li>
+				<li class = "list-group-item"> Flight cost: ${{ product.Details.text }}</li>		
+				</ul>			
+			{% endfor %}
+		</p>
+	</div>
+	
+<!-- Table of Flights http://www.tutorialrepublic.com/codelab.php?topic=bootstrap&file=table-with-hover-states-->
+
+	
+<!-- Founder Quote -->
+	<div class="bs-example">
+		<blockquote>
+	    	<p>Quote blahblah.</p>
+	    	<small>by <cite>Founder</cite></small>
+	    </blockquote>
+	</div>
+</body>
+<script>
+</script>
+</html>
